@@ -48,13 +48,6 @@ public class SaveFeedbackHandler implements RequestStreamHandler{
 	            FeedbackRequest feedback = new FeedbackRequest((String) event.get("body"));
 	            
 	            persistData(feedback);
-				/*
-				 * dynamoDb.getTable(DYNAMODB_TABLE_NAME) .putItem( new
-				 * PutItemSpec().withItem(new Item() .withPrimaryKey("feedbackId",
-				 * UUID.randomUUID().toString()) .withString("name", feedback.getName())
-				 * .withString("email_id", feedback.getEmail_id()) .withString("comments",
-				 * feedback.getComments()) .withInt("ratings", feedback.getRatings())));
-				 */
 	        }
 			
 			JSONObject responseBody = new JSONObject();
