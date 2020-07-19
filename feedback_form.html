@@ -178,9 +178,9 @@ button:hover {
 		
 		$.ajax({
 			url : 'https://xun963qt13.execute-api.us-west-2.amazonaws.com/first/feedbackdelete?feedback_id='+feedbackId,
-			type : 'GET',
+			type : 'DELETE',
 			dataType : 'json',
-			contentType : 'text/plain',
+			contentType : 'application/json',
 			crossDomain : true,
 			/* headers : {
 				"Access-Control-Allow-Origin" : "*",
